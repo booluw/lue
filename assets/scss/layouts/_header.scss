@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $white;
+  position: sticky;
+  top: 0;
+  padding: 2rem;
+  box-shadow: 0 .3rem .3rem .1rem rgba($black, .2);
+  border-bottom: .5rem solid $base;
+
+  &__logo {
+    width: 7rem;
+    height: auto;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

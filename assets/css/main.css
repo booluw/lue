@@ -1,0 +1,280 @@
+@font-face {
+  font-family: WorkSans;
+  src: url("../fonts/WorkSans-Light.ttf");
+}
+
+@font-face {
+  font-family: WorkSans;
+  src: url("../fonts/WorkSans-Medium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: WorkSans;
+  src: url("../fonts/WorkSans-Regular.ttf");
+  font-weight: 700;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  font-family: WorkSans, sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #fff9f2;
+}
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  outline: none;
+  border: none;
+  padding: 1rem 2rem;
+  -webkit-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
+}
+
+.btn:hover {
+  opacity: .8;
+}
+
+.btn--link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.btn--cta {
+  font-size: 2.3rem;
+  padding: 2rem;
+  background-color: #333;
+  color: white;
+}
+
+@media screen and (min-width: 1200px) {
+  .btn--cta {
+    padding: 1.5rem 4rem;
+    border-radius: 3rem;
+    font-size: 1.8rem;
+  }
+}
+
+#menu {
+  display: none;
+}
+
+.nav {
+  position: fixed;
+  top: 8.7rem;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #ff6700;
+  padding: 2rem;
+  -webkit-transform: translateX(-10000rem);
+          transform: translateX(-10000rem);
+  -webkit-transition: -webkit-transform 300ms ease-in;
+  transition: -webkit-transform 300ms ease-in;
+  transition: transform 300ms ease-in;
+  transition: transform 300ms ease-in, -webkit-transform 300ms ease-in;
+  list-style-type: none;
+}
+
+.nav__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: capitalize;
+  letter-spacing: .3rem;
+  padding: 2rem .5rem;
+  -webkit-margin-after: 2rem;
+          margin-block-end: 2rem;
+  border-bottom: .1rem solid currentColor;
+  font-size: 2rem;
+  color: white;
+  -webkit-transition: opacity 300ms ease-out;
+  transition: opacity 300ms ease-out;
+}
+
+.nav__link .lni {
+  -webkit-transform: translateX(-1rem);
+          transform: translateX(-1rem);
+  -webkit-transition: -webkit-transform 300ms ease-in-out;
+  transition: -webkit-transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
+}
+
+.nav__link:hover {
+  opacity: .7;
+}
+
+.nav__link:hover .lni {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+#menu:checked ~ .nav {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+@media screen and (min-width: 1200px) {
+  .nav {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    position: relative;
+    top: auto;
+    bottom: auto;
+    right: auto;
+    left: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+    background-color: transparent;
+  }
+  .nav__link {
+    display: block;
+    color: #ff6700;
+    margin: 0 1rem;
+    -webkit-margin-after: 0;
+            margin-block-end: 0;
+    padding: .5rem 1rem;
+    border: none;
+    font-weight: 900;
+  }
+  .nav__link .lni {
+    display: none;
+  }
+}
+
+.stairs {
+  display: block;
+  padding: .2rem;
+  width: 3rem;
+  border-radius: 1rem;
+  background-color: #ff6700;
+  -webkit-transform: translateX(-1rem);
+          transform: translateX(-1rem);
+  position: relative;
+}
+
+.stairs::before, .stairs::after {
+  position: absolute;
+  bottom: -1rem;
+  right: 0;
+  left: -1.2rem;
+  content: "";
+  padding: .2rem;
+  width: 100%;
+  background-color: #ff6700;
+  border-radius: 1rem;
+  -webkit-transition: -webkit-transform 400ms ease-in-out;
+  transition: -webkit-transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out, -webkit-transform 400ms ease-in-out;
+}
+
+.stairs::before {
+  top: -1rem;
+  bottom: auto;
+  right: -1.2rem;
+  left: auto;
+}
+
+#menu:checked ~ .stairs {
+  background-color: #333;
+}
+
+#menu:checked ~ .stairs::before {
+  -webkit-transform: translateY(1rem);
+          transform: translateY(1rem);
+  background-color: #333;
+}
+
+#menu:checked ~ .stairs::after {
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
+  background-color: #333;
+}
+
+@media screen and (min-width: 1200px) {
+  .stairs {
+    display: none;
+  }
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: white;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 2rem;
+  -webkit-box-shadow: 0 0.3rem 0.3rem 0.1rem rgba(51, 51, 51, 0.2);
+          box-shadow: 0 0.3rem 0.3rem 0.1rem rgba(51, 51, 51, 0.2);
+  border-bottom: 0.5rem solid #ff6700;
+}
+
+.header__logo {
+  width: 7rem;
+  height: auto;
+}
+
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/*# sourceMappingURL=main.css.map */

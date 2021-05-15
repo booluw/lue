@@ -1,0 +1,14 @@
+@import "../scss/abstract/colors",
+        "../scss/abstract/variables";
+
+@import "../scss/base/base",
+        "../scss/base/typography";
+    
+@import "../scss/components/btn",
+        "../scss/components/jumbotron",
+        "../scss/components/nav",
+        "../scss/components/stairs";
+      
+@import "../scss/layouts/footer",
+        "../scss/layouts/header",
+        "../scss/layouts/section";

@@ -1,0 +1,48 @@
+.stairs {
+  display: block;
+  padding: .2rem;
+  width: 3rem;
+  border-radius: 1rem;
+  background-color: $base;
+  transform: translateX(-1rem);
+  position: relative;
+
+  &::before,
+  &::after {
+    position: absolute;
+    bottom: -1rem;
+    right: 0;
+    left: -1.2rem;
+    content: "";
+    padding: .2rem;
+    width: 100%;
+    background-color: $base;
+    border-radius: 1rem;
+    transition: transform 400ms ease-in-out;
+  }
+
+  &::before {
+    top: -1rem;
+    bottom: auto;
+    right: -1.2rem;
+    left: auto;
+  }
+}
+
+#menu:checked ~ .stairs {
+  background-color: $black;
+}
+
+#menu:checked ~ .stairs::before {
+  transform: translateY(1rem);
+  background-color: $black;
+}
+
+#menu:checked ~ .stairs::after {
+  transform: translateY(-1rem);
+  background-color: $black;
+}
+
+@media screen and (min-width: 1200px) {
+  .stairs {display: none;}
+}
