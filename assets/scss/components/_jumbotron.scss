@@ -1,0 +1,59 @@
+.jumbotron {
+  padding: 2rem;
+  height: 80vh;
+  background-color: $base;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: .5rem solid $black;
+
+  &__heading {
+    font-size: 5rem;
+
+    span {
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: "";
+        width: 70%;
+        height: .2rem;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        padding: .2rem;
+        background-color: $white;
+      }
+    }
+  }
+
+  &__sub-heading {
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  &__btn {
+    transform: translateY(0);
+
+    &:hover {
+      transform: translateY(-.3rem);
+      box-shadow: 0 .3rem .5rem $black;
+    }
+
+    &:active {
+      transform: translateY(0);
+      box-shadow: none;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .jumbotron {
+    height: 35vh;
+  }
+}

@@ -1,9 +1,17 @@
 <template>
   <section class="page">
-    Homepage
+    <app-jumbotron @cta="modal = true"/>
+    <app-modal v-if="modal == true" />
   </section>
 </template>
 
 <script>
-export default {}
+export default {
+  name: 'IndexPage',
+  data() {
+    return {
+      modal: false
+    }
+  }
+}
 </script>
