@@ -11,9 +11,9 @@
           <p class="my-3 pb-5">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, eaque dolores. Ullam quae quod, assumenda officiis nostrum qui eos eveniet velit mollitia, explicabo, facilis aliquid provident quaerat animi quo numquam?
           </p>
-          <a href="#" @click.prevent="$emit('cta')" class="btn btn--cta btn--link jumbotron__btn">
+          <button href="#" @click.prevent="$emit('cta')" class="btn btn--cta btn--link jumbotron__btn">
             become a facilitator
-          </a>
+          </button>
         </div>
       </div>
     </div>

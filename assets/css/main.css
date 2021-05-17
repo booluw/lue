@@ -24,7 +24,6 @@
   outline: none;
   padding: 0;
   margin: 0;
-  font-family: WorkSans, sans-serif;
 }
 
 html {
@@ -34,6 +33,13 @@ html {
 body {
   font-size: 1.6rem;
   background-color: #fff9f2;
+  font-family: WorkSans, sans-serif;
+}
+
+h1, h2,
+h3, h4,
+p, input {
+  font-family: WorkSans, sans-serif;
 }
 
 .btn {
@@ -52,6 +58,7 @@ body {
   cursor: pointer;
   -webkit-transition: opacity 300ms ease-in-out;
   transition: opacity 300ms ease-in-out;
+  font-family: WorkSans, sans-serif;
 }
 
 .btn:hover {
@@ -77,6 +84,44 @@ body {
     border-radius: 3rem;
     font-size: 1.8rem;
   }
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  background-color: white;
+  padding: 2rem 4rem;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 0 1rem 0.5rem rgba(255, 103, 0, 0.1);
+          box-shadow: 0 0 1rem 0.5rem rgba(255, 103, 0, 0.1);
+  -webkit-margin-after: 2rem;
+          margin-block-end: 2rem;
+}
+
+.card__icon::before {
+  font-size: 4rem;
+  color: #ff6700;
+}
+
+.card__heading {
+  margin: 1.5rem 0;
+  font-size: 2.5rem;
+}
+
+.card__text {
+  font-size: 2rem;
 }
 
 .jumbotron {
@@ -352,5 +397,9 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.section {
+  padding: 5rem 2rem;
 }
 /*# sourceMappingURL=main.css.map */
