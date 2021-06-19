@@ -1,0 +1,17 @@
+.fancy-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  background-color: $black;
+  color: $white;
+  border: .5rem double $white;
+  font-size: 2rem;
+  margin-block-end: 1rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .fancy-box {
+    font-size: 3rem;
+  }
+}

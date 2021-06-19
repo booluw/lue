@@ -3,7 +3,7 @@
     <app-header @cta="modal = true" />
     <Nuxt />
     <app-footer />
-    <app-modal v-if="modal" />
+    <app-modal v-if="modal"  @close="modal = !modal" />
   </section>
 </template>
 

@@ -26,6 +26,22 @@
   margin: 0;
 }
 
+::-webkit-scrollbar {
+  background-color: #cccccc;
+  width: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #999999;
+  cursor: pointer;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: gray;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -42,6 +58,13 @@ p, input {
   font-family: WorkSans, sans-serif;
 }
 
+.heading--fancy {
+  font-size: 4rem;
+  font-weight: 900;
+  -webkit-margin-after: 2rem;
+          margin-block-end: 2rem;
+}
+
 .btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -53,12 +76,14 @@ p, input {
       -ms-flex-align: center;
           align-items: center;
   outline: none;
-  border: none;
+  border: .2rem double currentColor;
   padding: 1rem 2rem;
   cursor: pointer;
   -webkit-transition: opacity 300ms ease-in-out;
   transition: opacity 300ms ease-in-out;
   font-family: WorkSans, sans-serif;
+  background-color: #ff6700;
+  color: white;
 }
 
 .btn:hover {
@@ -69,6 +94,7 @@ p, input {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 900;
+  padding: 1.5rem 3rem;
 }
 
 .btn--cta {
@@ -79,9 +105,11 @@ p, input {
 }
 
 @media screen and (min-width: 1200px) {
+  .btn {
+    font-weight: 900;
+  }
   .btn--cta {
     padding: 1.5rem 4rem;
-    border-radius: 3rem;
     font-size: 1.8rem;
   }
 }
@@ -102,7 +130,7 @@ p, input {
           justify-content: center;
   text-align: center;
   background-color: white;
-  padding: 2rem 4rem;
+  padding: 3rem 4rem;
   border-radius: 1rem;
   -webkit-box-shadow: 0 0 1rem 0.5rem rgba(255, 103, 0, 0.1);
           box-shadow: 0 0 1rem 0.5rem rgba(255, 103, 0, 0.1);
@@ -117,11 +145,36 @@ p, input {
 
 .card__heading {
   margin: 1.5rem 0;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .card__text {
+  font-size: 1.9rem;
+}
+
+.fancy-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem 2rem;
+  background-color: #333;
+  color: white;
+  border: 0.5rem double white;
   font-size: 2rem;
+  -webkit-margin-after: 1rem;
+          margin-block-end: 1rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .fancy-box {
+    font-size: 3rem;
+  }
 }
 
 .jumbotron {
@@ -195,6 +248,112 @@ p, input {
 @media screen and (min-width: 1200px) {
   .jumbotron {
     height: 35vh;
+  }
+}
+
+.modal {
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  border-radius: 3rem 3rem 0rem 0rem;
+  overflow: hidden;
+  margin: 5rem 0 0;
+  position: relative;
+}
+
+.modal__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  -webkit-box-shadow: 0 0.1rem 0.1rem rgba(51, 51, 51, 0.1);
+          box-shadow: 0 0.1rem 0.1rem rgba(51, 51, 51, 0.1);
+}
+
+.modal__heading {
+  font-size: 2rem;
+  -webkit-margin-start: 3rem;
+          margin-inline-start: 3rem;
+  text-transform: uppercase;
+}
+
+.modal__content {
+  padding: 2rem;
+  font-size: 1.8rem;
+  overflow-y: scroll;
+  height: 90%;
+}
+
+.modal__list {
+  list-style-type: decimal;
+  margin: 2rem;
+}
+
+.modal-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  background-color: rgba(51, 51, 51, 0.1);
+}
+
+.modal .list {
+  -webkit-margin-after: 3rem;
+          margin-block-end: 3rem;
+}
+
+.modal .list::marker {
+  font-family: 'LineIcons';
+  content: '\ea39';
+  color: #b3b3b3;
+}
+
+.modal .list__heading {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  -webkit-margin-start: 2rem;
+          margin-inline-start: 2rem;
+}
+
+.modal .list__text {
+  margin: 1rem 0;
+  -webkit-margin-start: 2rem;
+          margin-inline-start: 2rem;
+}
+
+.modal .list__btn {
+  margin: 0 2rem !important;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    height: 70vh;
+    width: 50vw;
+    border-radius: 1rem 1rem 0 0;
+    margin: 0;
   }
 }
 
@@ -307,8 +466,8 @@ p, input {
 
 .stairs {
   display: block;
-  padding: .2rem;
-  width: 3rem;
+  padding: .1rem;
+  width: 2rem;
   border-radius: 1rem;
   background-color: #ff6700;
   -webkit-transform: translateX(-1rem);
@@ -322,7 +481,7 @@ p, input {
   right: 0;
   left: -1.2rem;
   content: "";
-  padding: .2rem;
+  padding: .1rem;
   width: 100%;
   background-color: #ff6700;
   border-radius: 1rem;
@@ -359,6 +518,34 @@ p, input {
   .stairs {
     display: none;
   }
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.footer__img {
+  width: 10rem;
+  height: auto;
+}
+
+.footer__text {
+  font-size: 2rem;
+}
+
+.footer__text::before, .footer__text::after {
+  content: '\eb65';
+  font-family: 'LineIcons';
+  font-size: 5rem;
+}
+
+.footer__copy {
+  -webkit-margin-before: 2rem;
+          margin-block-start: 2rem;
+  opacity: .6;
 }
 
 .header {
@@ -401,5 +588,44 @@ p, input {
 
 .section {
   padding: 5rem 2rem;
+}
+
+.section--bg {
+  background-color: #4d4d4d;
+}
+
+.section--bg .section__heading {
+  color: white;
+}
+
+.section__heading {
+  font-weight: 700;
+  font-size: 1.9rem;
+  text-transform: uppercase;
+  -webkit-margin-after: 1rem;
+          margin-block-end: 1rem;
+}
+
+.section__paragraph {
+  font-size: 1.9rem;
+}
+
+.section__list {
+  list-style: circle;
+  font-size: 1.9rem;
+  margin: 0 2rem;
+}
+
+.section__list li {
+  -webkit-margin-after: 1rem;
+          margin-block-end: 1rem;
+}
+
+.section__list li::marker {
+  content: '\ea12';
+  font-family: 'LineIcons';
+  color: #ff6700;
+  font-size: 1rem;
+  background-color: red;
 }
 /*# sourceMappingURL=main.css.map */

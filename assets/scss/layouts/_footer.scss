@@ -1,0 +1,27 @@
+.footer {
+  background-color: $black;
+  color: $white;
+  padding: 4rem 2rem;
+  text-align: center;
+
+  &__img {
+    width: 10rem;
+    height: auto;
+  }
+
+  &__text {
+    font-size: 2rem;
+
+    &::before,
+    &::after {
+      content: '\eb65';
+      font-family: 'LineIcons';
+      font-size: 5rem;
+    }
+  }
+
+  &__copy {
+    margin-block-start: 2rem;
+    opacity: .6;
+  }
+}

@@ -1,7 +1,7 @@
 .stairs {
   display: block;
-  padding: .2rem;
-  width: 3rem;
+  padding: .1rem;
+  width: 2rem;
   border-radius: 1rem;
   background-color: $base;
   transform: translateX(-1rem);
@@ -14,7 +14,7 @@
     right: 0;
     left: -1.2rem;
     content: "";
-    padding: .2rem;
+    padding: .1rem;
     width: 100%;
     background-color: $base;
     border-radius: 1rem;

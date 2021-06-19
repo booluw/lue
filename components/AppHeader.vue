@@ -7,15 +7,21 @@
       <input type="checkbox" id="menu" />
       <label for="menu" class="stairs"></label>
       <ul class="nav">
-        <li>
+        <!-- li>
           <nuxt-link to="/about" class="nav__link" exact-active-class="nav__link--active">
             About
             <i class="lni lni-chevron-right"></i>
           </nuxt-link>
+        </li --->
+        <li>
+          <nuxt-link to="/cohorts" class="nav__link" exact-active-class="nav__link--active">
+            cohorts
+            <i class="lni lni-chevron-right"></i>
+          </nuxt-link>
         </li>
         <li>
-          <nuxt-link to="/facilitators" class="nav__link" exact-active-class="nav__link--active">
-            facilitators
+          <nuxt-link to="/investors" class="nav__link" exact-active-class="nav__link--active">
+            investors
             <i class="lni lni-chevron-right"></i>
           </nuxt-link>
         </li>
@@ -26,8 +32,8 @@
           </nuxt-link>
         </li>
         <li>
-          <nuxt-link to="/locations" class="nav__link" exact-active-class="nav__link--active">
-            locations
+          <nuxt-link to="/partners" class="nav__link" exact-active-class="nav__link--active">
+            partners
             <i class="lni lni-chevron-right"></i>
           </nuxt-link>
         </li>

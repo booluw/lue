@@ -1,3 +1,40 @@
 .section {
   padding: 5rem 2rem;
+
+  &--bg {
+    background-color: lighten($black, 10);
+
+    .section__heading {
+      color: $white;
+    }
+  }
+
+  &__heading {
+    font-weight: 700;
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    margin-block-end: 1rem;
+  }
+
+  &__paragraph {
+    font-size: 1.9rem;
+  }
+
+  &__list {
+    list-style: circle;
+    font-size: 1.9rem;
+    margin: 0 2rem;
+
+    li {
+      margin-block-end: 1rem;
+
+      &::marker {
+        content: '\ea12';
+        font-family: 'LineIcons';
+        color: $base;
+        font-size: 1rem;
+        background-color: red;
+      }
+    }
+  }
 }
