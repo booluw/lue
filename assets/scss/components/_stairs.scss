@@ -10,7 +10,7 @@
   &::before,
   &::after {
     position: absolute;
-    bottom: -1rem;
+    bottom: -.7rem;
     right: 0;
     left: -1.2rem;
     content: "";
@@ -22,7 +22,7 @@
   }
 
   &::before {
-    top: -1rem;
+    top: -.7rem;
     bottom: auto;
     right: -1.2rem;
     left: auto;

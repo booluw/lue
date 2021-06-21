@@ -2,17 +2,22 @@
 
 .nav {
   position: fixed;
-  top: 8.7rem;
+  top: 7.3rem;
   bottom: 0;
   right: 0;
   left: 0;
   display: flex;
   flex-direction: column;
-  background-color: $base;
+  background-color: $black;
   padding: 2rem;
   transform: translateX(-10000rem);
-  transition: transform 300ms ease-in;
+  transition: transform 300ms ease-in-out;
   list-style-type: none;
+
+
+  &__list {
+    list-style: none;
+  }
 
   &__link {
     display: flex;
@@ -56,12 +61,20 @@
     left: auto;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+    flex-basis: 100%;
     padding: 0;
     background-color: transparent;
 
+    &__list {
+      display: flex;
+      list-style: none;
+      justify-self: center;
+    }
+
     &__link {
       display: block;
-      color: $base;
+      color: $black;
       margin: 0 1rem;
       margin-block-end: 0;
       padding: .5rem 1rem;

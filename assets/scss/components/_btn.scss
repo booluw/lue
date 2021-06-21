@@ -24,8 +24,8 @@
 
   &--cta {
     font-size: 2.3rem;
-    padding: 2rem;
-    background-color: $black;
+    padding: 1rem 2rem;
+    background-color: $base;
     color: white;
   }
 }
@@ -36,8 +36,9 @@
     font-weight: 900;
 
     &--cta {
-      padding: 1.5rem 4rem;
-      font-size: 1.8rem;
+      padding: 1rem 2rem;
+      font-size: 1.6rem;
+      font-weight: 900;
     }
   }
 }
