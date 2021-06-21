@@ -1,26 +1,51 @@
 .card {
   display: flex;
-  align-items: center;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
-  background-color: $white;
-  padding: 3rem 4rem;
-  border-radius: 1rem;
-  box-shadow: 0 0 1rem .5rem rgba($base, .1);
+  background-color: lighten($background, 3);
+  padding: 1rem 2rem 3rem;
   margin-block-end: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+  height: 100%;
 
-  &__icon::before {
-    font-size: 4rem;
-    color: $base;
+  &:hover {
+    box-shadow: 0 0 .5rem .2rem rgba($background, .9);
   }
 
   &__heading {
-    margin: 1.5rem 0;
+    margin: 1rem 0;
     font-size: 2rem;
+    font-weight: 900;
   }
 
   &__text {
-    font-size: 1.9rem;
+    font-size: 1.8rem;
+    opacity: .7;
+  }
+
+  &__link {
+    color: black;
+    font-size: 1.6rem;
+    margin: 1rem 0 0;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 30%;
+      height: 100%;
+      border-bottom: .2rem solid black;
+      padding: 1rem;
+      position: absolute;
+      left: 0;
+      bottom: -.7rem;
+      transition: 300ms ease-in-out;
+    }
+
+    &:hover {
+      &::after {
+        width: 70%;
+      }
+    }
   }
 }

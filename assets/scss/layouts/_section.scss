@@ -1,23 +1,38 @@
 .section {
-  padding: 5rem 2rem;
+  padding: 3rem 2rem;
 
   &--bg {
-    background-color: lighten($black, 10);
+    background-color: $background;
 
     .section__heading {
-      color: $white;
+      color: $black;
     }
   }
 
   &__heading {
-    font-weight: 700;
-    font-size: 1.9rem;
-    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 3rem;
     margin-block-end: 1rem;
+    margin-inline-start: 3rem;
+    position: relative;
+    text-transform: capitalize;
+
+    &::before {
+      content: "";
+      width: 2rem;
+      top: 40%;
+      bottom: 40%;
+      left: -3rem;
+      background-color: $black;
+      padding: .1rem;
+      position: absolute;
+    }
   }
 
   &__paragraph {
     font-size: 1.9rem;
+    font-weight: 600;
+    opacity: .6rem;
   }
 
   &__list {
@@ -36,5 +51,18 @@
         background-color: red;
       }
     }
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 5rem;
+    margin: 2rem 0;
   }
 }
