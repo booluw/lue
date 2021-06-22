@@ -4,10 +4,16 @@
       <img src="~/assets/img/lue-logo.png" alt="LUE logo transparent background" class="header__logo" />
     </nuxt-link>
     <nav class="header__nav">
-      <input type="checkbox" id="menu" />
+      <input type="checkbox" id="menu" ref="menu"/>
       <label for="menu" class="stairs"></label>
       <div class="nav">
         <ul class="nav__list mb-5 mb-md-0">
+          <li>
+            <nuxt-link to="/cohorts" class="nav__link" exact-active-class="nav__link--active">
+              cohorts
+              <i class="lni lni-chevron-right"></i>
+            </nuxt-link>
+          </li>
           <li>
             <nuxt-link to="/investors" class="nav__link" exact-active-class="nav__link--active">
               investors
@@ -37,6 +43,14 @@
 
 <script>
 export default {
-  name: 'AppHeader'
+  name: 'AppHeader',
+  watch: {
+    '$route': 'handleToggle'
+  },
+  methods: {
+    handleToggle() {
+      this.$refs.menu.checked = false
+    }
+  }
 }
 </script>

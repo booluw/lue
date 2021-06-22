@@ -38,17 +38,17 @@
   &__list {
     list-style: circle;
     font-size: 1.9rem;
-    margin: 0 2rem;
+    margin: 2rem 2rem 0;
 
     li {
-      margin-block-end: 1rem;
+      margin-block-end: 2rem;
+      padding: 0 0 0 1rem;
 
       &::marker {
-        content: '\ea12';
         font-family: 'LineIcons';
-        color: $base;
-        font-size: 1rem;
-        background-color: red;
+        content: '\ea39';
+        color: lighten($black, 30);
+        font-weight: normal;
       }
     }
   }

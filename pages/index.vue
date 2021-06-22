@@ -1,10 +1,10 @@
 <template>
   <section class="page">
     <app-jumbotron @cta="modal = true"/>
-    <section class="section pb-0">
+    <section class="section">
       <div class="row m-0 justify-content-between align-items-center">
         <div class="col-md-5 p-0">
-          <img src="~/assets/img/jumbotron-img.jpg" class="section__img" alt="About LUE" />
+          <img src="~/assets/img/conference-hall.jpg" class="section__img" alt="About LUE" />
         </div>
         <div class="col-md-6 p-0">
           <h2 class="section__heading">About us</h2>
@@ -28,11 +28,11 @@
           </p>    
         </div>
         <div class="col-md-5 p-0">
-          <img src="~/assets/img/jumbotron-img.jpg" class="section__img" alt="About LUE" />
+          <img src="~/assets/img/do-something-great.jpg" class="section__img" alt="About LUE" />
         </div>
       </div>
     </section>
-    <section class="section pb-0">
+    <section class="section">
       <div class="row m-0 justify-content-between align-items-center">
         <div class="col-md-5 p-0">
           <img src="~/assets/img/jumbotron-img.jpg" class="section__img" alt="About LUE" />
@@ -50,7 +50,7 @@
     <section class="section">
       <h2 class="section__heading">What we do</h2>
       <div class="row m-0 mt-5">
-        <div class="col-md-3 p-0 pr-md-2">
+        <div class="col-md-3 py-3 p-0 pr-md-2 py-md-0">
           <div class="card">
             <h3 class="card__heading">LUE School</h3>
             <p class="card__text">
@@ -60,7 +60,7 @@
             <nuxt-link to="/lue-school" class="card__link">Read more about LUE School</nuxt-link>
           </div>
         </div>
-        <div class="col-md-3 p-0 px-md-2">
+        <div class="col-md-3 py-3 p-0 px-md-2 py-md-0">
           <div class="card">
             <h3 class="card__heading">LUE Focus</h3>
             <p class="card__text">
@@ -69,7 +69,7 @@
             <nuxt-link to="/lue-focus" class="card__link">Read more about LUE Focus</nuxt-link>
           </div>
         </div>
-        <div class="col-md-3 p-0 px-md-2">
+        <div class="col-md-3 py-3 p-0 px-md-2 py-md-0">
           <div class="card">
             <h3 class="card__heading">LUE Street</h3>
             <p class="card__text">
@@ -78,7 +78,7 @@
             <nuxt-link to="/lue-street" class="card__link">Read more about LUE Street</nuxt-link>
           </div>
         </div>
-        <div class="col-md-3 p-0 pl-md-2">
+        <div class="col-md-3 py-3 p-0 pl-md-2 py-md-0">
           <div class="card">
             <h3 class="card__heading">LUE Trade and Exhibitions</h3>
             <p class="card__text">

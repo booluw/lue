@@ -1,6 +1,6 @@
 .jumbotron {
   padding: 2rem;
-  height: 60vh;
+  height: 80vh;
   background-color: $white;
   display: flex;
   flex-direction: column;
@@ -42,11 +42,11 @@
 
     &__img {
       display: block;
-      width: 20rem;
+      width: 30rem;
       height: auto;
       position: absolute;
-      top: 25vh;
-      left: -10rem;
+      bottom: 0;
+      left: -15rem;
       border: .7rem solid darken($background, 20);
       padding: .7rem;
 

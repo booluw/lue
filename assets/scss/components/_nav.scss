@@ -82,6 +82,10 @@
       font-weight: 900;
 
       .lni {display: none;}
+
+      &--active {
+        opacity: .7;
+      }
     }
   }
 }

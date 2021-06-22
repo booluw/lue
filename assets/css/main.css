@@ -205,7 +205,7 @@ p, input {
 
 .jumbotron {
   padding: 2rem;
-  height: 60vh;
+  height: 80vh;
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -252,11 +252,11 @@ p, input {
   }
   .jumbotron__img {
     display: block;
-    width: 20rem;
+    width: 30rem;
     height: auto;
     position: absolute;
-    top: 25vh;
-    left: -10rem;
+    bottom: 0;
+    left: -15rem;
     border: 0.7rem solid #bfbfbf;
     padding: .7rem;
   }
@@ -509,6 +509,9 @@ p, input {
   .nav__link .lni {
     display: none;
   }
+  .nav__link--active {
+    opacity: .7;
+  }
 }
 
 .stairs {
@@ -635,8 +638,8 @@ p, input {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -ms-flex-preferred-size: 70%;
-        flex-basis: 70%;
+    -ms-flex-preferred-size: 75%;
+        flex-basis: 75%;
   }
 }
 
@@ -683,20 +686,20 @@ p, input {
 .section__list {
   list-style: circle;
   font-size: 1.9rem;
-  margin: 0 2rem;
+  margin: 2rem 2rem 0;
 }
 
 .section__list li {
-  -webkit-margin-after: 1rem;
-          margin-block-end: 1rem;
+  -webkit-margin-after: 2rem;
+          margin-block-end: 2rem;
+  padding: 0 0 0 1rem;
 }
 
 .section__list li::marker {
-  content: '\ea12';
   font-family: 'LineIcons';
-  color: #ff6700;
-  font-size: 1rem;
-  background-color: red;
+  content: '\ea39';
+  color: gray;
+  font-weight: normal;
 }
 
 .section__img {

@@ -8,8 +8,10 @@
         <p class="jumbotron__text">
           We believe it is a skill-set and way of thinking that drives creativity and innovation. Its core is about building solutions to problems and taking the right steps to make them a reality.
         </p>
-        <div class="d-flex">
-          
+        <div class="mt-5">
+          <nuxt-link to="/why-entrepreneurship" class="btn btn--link">
+            Why Entrepreneurship
+          </nuxt-link>
         </div>
       </div>
       <div class="col-md-5 p-0">
@@ -20,7 +22,7 @@
             </clipPath>
           </svg>
           <div class="jumbotron__img--main"></div>
-          <img src="~/assets/img/jumbotron-img.jpg" class="jumbotron__img jumbotron__img--sub" />
+          <img src="~/assets/img/happy-kids.jpg" class="jumbotron__img jumbotron__img--sub" />
         </div>
       </div>
     </div>
