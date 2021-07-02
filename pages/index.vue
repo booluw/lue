@@ -12,9 +12,9 @@
             <b>Let's Use Entrepreneurship</b> is one of the leading catalyst in driving economic and socio-economic gowth in Nigeria and Africa at large.
             We are geared towards raising exceptional enterprenuers and leaders who will solve real life problems and create value via Entrepreneurship.
           </p>
-          <div class="mt-5">
+          <!-- div class="mt-5">
             <nuxt-link to="/about-us" class="btn btn--link">The LUE Team</nuxt-link>
-          </div>
+          </div --->
         </div>
       </div>
     </section>

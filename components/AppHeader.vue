@@ -33,7 +33,7 @@
             </nuxt-link>
           </li>
         </ul>
-        <a href="#" @click.prevent="$emit('cta')" class="btn btn--link btn--cta mt-5 mt-md-0">
+        <a href="mailto:info@lueinitiative.org" class="btn btn--link btn--cta mt-5 mt-md-0">
           Get in touch
         </a>
       </div>

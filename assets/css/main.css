@@ -582,20 +582,56 @@ p, input {
   height: auto;
 }
 
-.footer__text {
-  font-size: 2rem;
+.footer__icon {
+  font-size: 3.5rem;
 }
 
-.footer__text::before, .footer__text::after {
-  content: '\eb65';
-  font-family: 'LineIcons';
-  font-size: 5rem;
+.footer__icon .lni {
+  color: #f2f2f2;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
+.footer__icon .lni:hover {
+  opacity: .7;
+}
+
+.footer__paragraph {
+  opacity: .7;
+  font-size: 2rem;
+  text-align: left;
+}
+
+.footer__link {
+  color: #f2f2f2;
+  display: block;
+  text-align: left;
+  padding: .5rem 0 1rem;
+  -webkit-margin-after: 1rem;
+          margin-block-end: 1rem;
+  border-bottom: .2rem solid currentColor;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
+.footer__link:hover {
+  color: #ff6700;
+}
+
+.footer__links {
+  list-style: none;
 }
 
 .footer__copy {
   -webkit-margin-before: 2rem;
           margin-block-start: 2rem;
   opacity: .6;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding: 5rem;
+  }
 }
 
 .header {

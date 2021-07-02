@@ -9,19 +9,51 @@
     height: auto;
   }
 
-  &__text {
-    font-size: 2rem;
+  &__icon {
+    font-size: 3.5rem;
 
-    &::before,
-    &::after {
-      content: '\eb65';
-      font-family: 'LineIcons';
-      font-size: 5rem;
+    .lni {
+      color: $background;
+      transition: 300ms ease-in-out;
+
+      &:hover {
+        opacity: .7;
+      }
+    }
+  }
+
+  &__paragraph {
+    opacity: .7;
+    font-size: 2rem;
+    text-align: left;
+  }
+
+  &__link {
+    color: $background;
+    display: block;
+    text-align: left;
+    padding: .5rem 0 1rem;
+    margin-block-end: 1rem;
+    border-bottom: .2rem solid currentColor;
+    transition: 300ms ease-in-out;
+
+    &:hover {
+      color: $base;
+    }
+
+    &s {
+      list-style: none;
     }
   }
 
   &__copy {
     margin-block-start: 2rem;
     opacity: .6;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding: 5rem;
   }
 }
