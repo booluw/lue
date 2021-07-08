@@ -674,8 +674,8 @@ p, input {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -ms-flex-preferred-size: 75%;
-        flex-basis: 75%;
+    -ms-flex-preferred-size: 80%;
+        flex-basis: 80%;
   }
 }
 

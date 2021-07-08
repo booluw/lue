@@ -27,6 +27,15 @@
         <a href="//facebook.com/LUEinitiative" target="_blank">
           <i class="lni lni-facebook-original"></i>
         </a>
+        <a href="//linkedin/company/lue-initiative" target="_blank" class="mx-3">
+          <i class="lni lni-linkedin"></i>
+        </a>
+        <a href="//instagram.com/lue_initiative" target="_blank" class="mx-3">
+          <i class="lni lni-instagram"></i>
+        </a>
+        <a href="//youtube.com/channel/UCsjRly0cZ5CJfW3Ybrg-AYA" target="_blank">
+          <i class="lni lni-youtube"></i>
+        </a>
       </div>
     </div>
     <div class="footer__copy">

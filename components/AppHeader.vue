@@ -32,6 +32,12 @@
               <i class="lni lni-chevron-right"></i>
             </nuxt-link>
           </li>
+          <li>
+            <nuxt-link to="/hss" class="nav__link" exact-active-class="nav__link--active">
+              HSS
+              <i class="lni lni-chevron-right"></i>
+            </nuxt-link>
+          </li>
         </ul>
         <a href="mailto:info@lueinitiative.org" class="btn btn--link btn--cta mt-5 mt-md-0">
           Get in touch
